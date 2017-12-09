@@ -16,15 +16,26 @@ public class Movement : MonoBehaviour {
     public float limit_up;
     public float limit_down;
     public float speed = 0.05f;
+    public bool temp = false;
     float h = 0.0f;
     float v = 0.0f;
 
-	//AudioSource m_MyAudioSource;
-	bool camina = false;
+    bool readed = false;
+
+    //AUDIO
+
+    public AudioClip otherClip;
+    AudioSource audioSource;
+
+    //AudioSource m_MyAudioSource;
+    bool camina = false;
 	bool empiezaCaminar = false;
     // Use this for initialization
 	void Start () {
         rigi = GetComponent<Rigidbody>() ;
+
+        audioSource = GetComponent<AudioSource>();
+
         secondcamera.enabled = false;
         camera.enabled = true;
         //camera = GetComponent<Camera>();
@@ -87,6 +98,18 @@ public class Movement : MonoBehaviour {
 			empiezaCaminar = true;
 		}
         */
+
+
+    }
+
+    void PlaySound()
+    {
+        if(State == 1)
+        {
+            audioSource.Play();
+            State = 2;
+        }
+
     }
         void calculate()
     {
@@ -96,7 +119,7 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         switch (State) {
-            case 0:
+            case 0:  //Normal Movement
                 calculate();
                 Zoom();
                 movement();
@@ -107,6 +130,34 @@ public class Movement : MonoBehaviour {
                 float temp = Mathf.Min(camera.transform.eulerAngles.x, 80);
                 temp = Mathf.Max(camera.transform.eulerAngles.x, -80);
                 camera.transform.localEulerAngles = new Vector3(temp, 0, 0);
+                break;
+            case 1: //Rotating the object
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    if (!readed)
+                    {
+                        PlaySound();
+                        State = 2;
+                    }
+                    else
+                    {
+                        secondcamera.enabled = false;
+                        camera.enabled = true;
+                        State = 0;
+                    }
+                   
+                   
+                }
+
+                break;
+            case 2:
+                if (!audioSource.isPlaying)
+                {
+                    secondcamera.enabled = false;
+                    camera.enabled = true;
+                    State = 0;
+                    readed = true;
+                }
                 break;
         }
        

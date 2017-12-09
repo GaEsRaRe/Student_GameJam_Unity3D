@@ -323,6 +323,18 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 02ce38d44d96b4061a2aa94d0f9b9e97, type: 3}
+    - target: {fileID: 1233835227426578, guid: c24bdec5941a22048a98db7ca9f60886, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863754791901766, guid: c24bdec5941a22048a98db7ca9f60886, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.22588189
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863754791901766, guid: c24bdec5941a22048a98db7ca9f60886, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.26963416
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c24bdec5941a22048a98db7ca9f60886, type: 2}
   m_IsPrefabParent: 0

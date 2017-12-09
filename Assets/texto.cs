@@ -14,7 +14,7 @@ public class texto : MonoBehaviour {
 	void OnTriggerEnter (Collider Other){
 		
 		if (Other.gameObject.CompareTag ("Player") && mostrar) {
-			Debug.Log ("mostro");
+			
 			mostrar = false;
 			m.enabled = true;
 		}

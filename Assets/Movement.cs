@@ -5,7 +5,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
 
     Rigidbody rigi;
+    public int State = 0;
     public Camera camera;
+    public Camera secondcamera;
     public float camera_speed = 5.00f;
     public float camera_up = 5.00f;
     public float force = 10;
@@ -17,15 +19,18 @@ public class Movement : MonoBehaviour {
     float h = 0.0f;
     float v = 0.0f;
 
-	AudioSource m_MyAudioSource;
+	//AudioSource m_MyAudioSource;
 	bool camina = false;
 	bool empiezaCaminar = false;
     // Use this for initialization
 	void Start () {
         rigi = GetComponent<Rigidbody>() ;
+        secondcamera.enabled = false;
+        camera.enabled = true;
         //camera = GetComponent<Camera>();
-		m_MyAudioSource = GetComponent<AudioSource>();
+		//m_MyAudioSource = GetComponent<AudioSource>();
 	}
+    
 
     void Zoom()
     {
@@ -37,6 +42,8 @@ public class Movement : MonoBehaviour {
         }
     }
 
+
+
     void movement()
     {
         if (Input.GetKey(KeyCode.LeftShift))
@@ -45,10 +52,6 @@ public class Movement : MonoBehaviour {
         }else
         {
             speed = basic_speed;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log("is working");
         }
 		if (Input.GetKey (KeyCode.A)) {
 			transform.Translate (new Vector3 (-speed, 0, 0));
@@ -68,7 +71,7 @@ public class Movement : MonoBehaviour {
         {
             rigi.AddForce(new Vector3(0,300,0));
         }
-
+        /*
 		if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.A) ||
 		   Input.GetKey(KeyCode.S) || Input.GetKey (KeyCode.D)) {
 			camina = true;
@@ -83,6 +86,7 @@ public class Movement : MonoBehaviour {
 			m_MyAudioSource.Stop ();
 			empiezaCaminar = true;
 		}
+        */
     }
         void calculate()
     {
@@ -91,15 +95,20 @@ public class Movement : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-        calculate();
-        Zoom();
-        movement();
+        switch (State) {
+            case 0:
+                calculate();
+                Zoom();
+                movement();
 
-        transform.Rotate(new Vector3(0, h, 0));
-        camera.transform.Rotate(new Vector3(-v, 0, 0));
+                transform.Rotate(new Vector3(0, h, 0));
+                camera.transform.Rotate(new Vector3(-v, 0, 0));
 
-        float temp = Mathf.Min(camera.transform.eulerAngles.x, 80);
-        temp = Mathf.Max(camera.transform.eulerAngles.x, -80);
-        camera.transform.localEulerAngles = new Vector3(temp,0,0);
+                float temp = Mathf.Min(camera.transform.eulerAngles.x, 80);
+                temp = Mathf.Max(camera.transform.eulerAngles.x, -80);
+                camera.transform.localEulerAngles = new Vector3(temp, 0, 0);
+                break;
+        }
+       
     }
 }

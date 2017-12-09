@@ -34,7 +34,6 @@ public class abrirPuerta : MonoBehaviour {
 		} else {
 			tiempoTranscurrido = 0;
 			abrir = false;
-			cerrar = true;
 			abierta = true;
 		}
 	}
@@ -53,15 +52,21 @@ public class abrirPuerta : MonoBehaviour {
 
 	// Colision con personaje
 	void OnTriggerStay(Collider Other){
-		
-		if(Input.GetKeyDown(KeyCode.E)){
-			abrir = true;
+
+		if(Other.gameObject.CompareTag("Player")){
+			if (!cerrar) {
+				if (Input.GetKeyDown (KeyCode.E)) {
+					abrir = true;
+				}
+			}
 		}
 	}
-	void OnTriggerExit()
+	void OnTriggerExit(Collider Other)
 	{
-		if (abierta) {
-			cerrar = true;
+		if (Other.gameObject.CompareTag ("Player")) {
+			if (abierta) {
+				cerrar = true;
+			}
 		}
 	}
 }

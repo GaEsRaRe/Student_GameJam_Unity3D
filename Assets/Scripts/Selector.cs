@@ -10,7 +10,7 @@ public class Selector : MonoBehaviour {
     GameObject examine;
 	// Use this for initialization
 	void Start () {
-		
+		    
 	}
 	
 
@@ -22,7 +22,7 @@ public class Selector : MonoBehaviour {
             if(ray.transform.gameObject.tag == "selectable")
             {
                 create(ray.transform.gameObject);
-                player.GetComponent<Movement>().enabled = false;
+                player.GetComponent<Movement>().State = 1;
             }
             
             Debug.Log(ray.transform.name);
@@ -35,16 +35,20 @@ public class Selector : MonoBehaviour {
         examine = Instantiate(dar, new Vector3(scamera.transform.position.x, scamera.transform.position.y, scamera.transform.position.z + 1.5f), new Quaternion(Quaternion.identity.x, Quaternion.identity.y, Quaternion.identity.z - 10, Quaternion.identity.w)) as GameObject;
         MeshCollider col;
         col = examine.transform.GetComponent<MeshCollider>();
+        col.transform.localScale = new Vector3(1, 1, 0.01f);
         col.enabled = false;
         maincamera.enabled = false;
         scamera.enabled = true;
+        col.gameObject.AddComponent<RotateMouse>();
     }
 	// Update is called once per frame
 	void Update () {
-
-        if (Input.GetMouseButtonDown(0))
+        if(player.GetComponent<Movement>().State == 0)
         {
-            select();   
-        }
+            if (Input.GetMouseButtonDown(0))
+            {
+                select();
+            }
+        }  
 	}
 }

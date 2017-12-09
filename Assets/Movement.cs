@@ -16,10 +16,15 @@ public class Movement : MonoBehaviour {
     public float speed = 0.05f;
     float h = 0.0f;
     float v = 0.0f;
+
+	AudioSource m_MyAudioSource;
+	bool camina = false;
+	bool empiezaCaminar = false;
     // Use this for initialization
 	void Start () {
         rigi = GetComponent<Rigidbody>() ;
         //camera = GetComponent<Camera>();
+		m_MyAudioSource = GetComponent<AudioSource>();
 	}
 
     void Zoom()
@@ -45,27 +50,39 @@ public class Movement : MonoBehaviour {
         {
             Debug.Log("is working");
         }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(new Vector3(-speed, 0, 0));
-        }
+		if (Input.GetKey (KeyCode.A)) {
+			transform.Translate (new Vector3 (-speed, 0, 0));
+		}
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(new Vector3(speed, 0, 0));
-        }
+			transform.Translate(new Vector3(speed, 0, 0));
+		}
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(new Vector3(0,0,speed));
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(new Vector3(0, 0, -speed));
-        }
+			transform.Translate(new Vector3(0,0,speed));
+		}
+		if (Input.GetKey (KeyCode.S)) {
+			transform.Translate (new Vector3 (0, 0, -speed));
+		}
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rigi.AddForce(new Vector3(0,300,0));
         }
 
+		if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.A) ||
+		   Input.GetKey(KeyCode.S) || Input.GetKey (KeyCode.D)) {
+			camina = true;
+			if (empiezaCaminar) m_MyAudioSource.Play ();
+		}else
+			camina = false;
+		if (camina) {
+			m_MyAudioSource.loop = true;
+			empiezaCaminar = false;
+		} else {
+			m_MyAudioSource.loop = false;
+			m_MyAudioSource.Stop ();
+			empiezaCaminar = true;
+		}
     }
         void calculate()
     {

@@ -54,8 +54,8 @@ public class abrirPuerta : MonoBehaviour {
 	void OnTriggerStay(Collider Other){
 
 		if(Other.gameObject.CompareTag("Player")){
-			if (!cerrar) {
-				if (Input.GetKeyDown (KeyCode.E)) {
+			if (!cerrar&&!abierta) {
+				if (Input.GetKeyDown (KeyCode.E)!=abierta) {
 					abrir = true;
 				}
 			}
@@ -64,7 +64,7 @@ public class abrirPuerta : MonoBehaviour {
 	void OnTriggerExit(Collider Other)
 	{
 		if (Other.gameObject.CompareTag ("Player")) {
-			if (abierta) {
+			if (abierta&&!abrir) {
 				cerrar = true;
 			}
 		}

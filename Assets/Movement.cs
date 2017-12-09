@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour {
     public float camera_speed = 5.00f;
     public float camera_up = 5.00f;
     public float force = 10;
+    public float limit_up;
+    public float limit_down;
     public float speed = 0.05f;
     float h = 0.0f;
     float v = 0.0f;
@@ -57,5 +59,9 @@ public class Movement : MonoBehaviour {
 
         transform.Rotate(new Vector3(0, h, 0));
         camera.transform.Rotate(new Vector3(-v, 0, 0));
-	}
+
+        float temp = Mathf.Min(camera.transform.eulerAngles.x, 80);
+        temp = Mathf.Max(camera.transform.eulerAngles.x, -80);
+        camera.transform.localEulerAngles = new Vector3(temp,0,0);
+    }
 }

@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour {
     public float camera_speed = 5.00f;
     public float camera_up = 5.00f;
     public float force = 10;
+    float basic_speed = 0.05f;
+    float double_speed = 0.09f;
     public float limit_up;
     public float limit_down;
     public float speed = 0.05f;
@@ -20,10 +22,25 @@ public class Movement : MonoBehaviour {
         //camera = GetComponent<Camera>();
 	}
 
-
+    void Zoom()
+    {
+        if (Input.GetMouseButton(1)){
+            camera.fieldOfView = 40;
+        }else
+        {
+            camera.fieldOfView = 60;
+        }
+    }
 
     void movement()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = double_speed;
+        }else
+        {
+            speed = basic_speed;
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             Debug.Log("is working");
@@ -44,6 +61,10 @@ public class Movement : MonoBehaviour {
         {
             transform.Translate(new Vector3(0, 0, -speed));
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rigi.AddForce(new Vector3(0,300,0));
+        }
 
     }
         void calculate()
@@ -54,7 +75,7 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         calculate();
-
+        Zoom();
         movement();
 
         transform.Rotate(new Vector3(0, h, 0));

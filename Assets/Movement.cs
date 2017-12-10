@@ -159,6 +159,15 @@ public class Movement : MonoBehaviour {
                     readed = true;
                 }
                 break;
+            case 3:
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                   
+                        secondcamera.enabled = false;
+                        camera.enabled = true;
+                        State = 0;
+                }
+                break;
         }
        
     }

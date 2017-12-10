@@ -9,6 +9,10 @@ public class abrirPuerta : MonoBehaviour {
 	bool cerrar = false;
 	bool abierta = false;
 	bool llave;
+	public AudioClip sndAbrir;
+
+	public AudioClip sndCerrar;
+	AudioSource aS;
 
 	public void SetLlave(){
 		llave = true;
@@ -16,6 +20,7 @@ public class abrirPuerta : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		llave = false;
+		aS = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -63,6 +68,7 @@ public class abrirPuerta : MonoBehaviour {
 				if (!cerrar && !abierta) {
 					if (Input.GetKeyDown (KeyCode.E) != abierta) {
 						abrir = true;
+						aS.PlayOneShot (sndAbrir,90.0f);
 					}
 				}
 			}
@@ -73,6 +79,7 @@ public class abrirPuerta : MonoBehaviour {
 		if (Other.gameObject.CompareTag ("Player")) {
 			if (abierta&&!abrir) {
 				cerrar = true;
+				aS.PlayOneShot (sndCerrar,90.0f);
 			}
 		}
 	}

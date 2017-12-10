@@ -100,7 +100,7 @@ public class puertaTeletrans : MonoBehaviour {
 	}
 
 	FishEyeTransition fishEye = new FishEyeTransition() {
-		nextScene = 0,
+		nextScene = 2,
 		duration = 1.0f,
 		size = 0.08f,
 		zoom = 10.0f,

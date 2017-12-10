@@ -11,8 +11,8 @@ public class Movement : MonoBehaviour {
     public float camera_speed = 5.00f;
     public float camera_up = 5.00f;
     public float force = 10;
-    float basic_speed = 0.05f;
-    float double_speed = 0.09f;
+    float basic_speed = 0.03f;
+    float double_speed = 0.05f;
     public float limit_up;
     public float limit_down;
     public float speed = 0.05f;

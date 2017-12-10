@@ -20,7 +20,7 @@ public class llaveIntro : MonoBehaviour {
 
 		if(Other.gameObject.CompareTag("Player")){
 			m.enabled = false;
-			door.gameObject.GetComponent<puertaTintro>().SetLlave();
+			door.gameObject.GetComponent<PuertaTintro>().SetLlave();
 		}
 	}
 }

@@ -1107,6 +1107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb5494b628664057a52b25b27c3afbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  llave: 0
+  sndAbrir: {fileID: 8300000, guid: 4c9e8e5ccffce4d2c99cb37823f0e806, type: 3}
+  sndCerrar: {fileID: 8300000, guid: 8f86acbb4de08485883517962fbc6532, type: 3}
+  sndCerrado: {fileID: 8300000, guid: 2a3b256d581ef4323bce8fe6b096bc71, type: 3}
+  tipo: 1
 --- !u!1 &483941490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,6 +2784,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.228
       objectReference: {fileID: 0}
+    - target: {fileID: 23924265786416356, guid: 59a108de39759457b80bfb5d1eabe0c8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa7c4464f009045128845deeaa1988ef, type: 2}
     m_RemovedComponents:
     - {fileID: 114891349860743116, guid: 59a108de39759457b80bfb5d1eabe0c8, type: 2}
     - {fileID: 114372940326630840, guid: 59a108de39759457b80bfb5d1eabe0c8, type: 2}

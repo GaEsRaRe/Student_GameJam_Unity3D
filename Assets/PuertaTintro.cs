@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Prime31.TransitionKit;
 
-public class puertaTintro : MonoBehaviour {
+public class PuertaTintro : MonoBehaviour {
 	int tiempo = 100;
 	int tiempoTranscurrido = 0;
 	bool abrir = false;

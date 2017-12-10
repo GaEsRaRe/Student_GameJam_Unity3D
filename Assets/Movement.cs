@@ -17,9 +17,10 @@ public class Movement : MonoBehaviour {
     public float limit_down;
     public float speed = 0.05f;
     public bool temp = false;
+    Vector3 checkpoint;
     float h = 0.0f;
     float v = 0.0f;
-
+    //To be unable to read two times the same document
     bool readed = false;
 
     //AUDIO
@@ -35,13 +36,25 @@ public class Movement : MonoBehaviour {
         rigi = GetComponent<Rigidbody>() ;
 
         audioSource = GetComponent<AudioSource>();
-
+        checkpoint = transform.position;
         secondcamera.enabled = false;
         camera.enabled = true;
         //camera = GetComponent<Camera>();
 		//m_MyAudioSource = GetComponent<AudioSource>();
 	}
     
+
+    public void Teleport(Vector3 Post)
+    {
+        transform.position = Post;
+        readed = false;
+        checkpoint = Post;
+    }
+
+    public void Restart()
+    {
+        transform.position = checkpoint;
+    }
 
     void Zoom()
     {

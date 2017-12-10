@@ -200,7 +200,7 @@ public class Movement : MonoBehaviour {
         if (col.gameObject.tag == "Platform")
         {
             Debug.Log("hASF");
-            transform.parent = null;
+            transform.parent = null; 
 
         }
     }

@@ -14,3 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/PrimerPiso.unity
     guid: dc03c8b0cf13b1142b04748116f9977d
+  - enabled: 1
+    path: Assets/Game/Level1.unity
+    guid: d2e0943719f7b1b419399854f62341e3
+  - enabled: 1
+    path: Assets/Game/PrimerPisoReDo.unity
+    guid: d91e5acf4c76ee14cbb6ad658cadab90

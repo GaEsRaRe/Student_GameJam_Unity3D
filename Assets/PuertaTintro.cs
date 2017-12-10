@@ -68,7 +68,7 @@ public class PuertaTintro : MonoBehaviour {
 	void OnTriggerStay(Collider Other){
 
 
-		if (llave) {
+		if (true) {
 			if (Other.gameObject.CompareTag ("Player")) {
 				if (Input.GetKeyDown (KeyCode.E)) {
 					if (tipo == 0) {

@@ -184,4 +184,24 @@ public class Movement : MonoBehaviour {
         }
        
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        Debug.Log("lala");
+        if (col.gameObject.tag == "Platform")
+        {
+            Debug.Log("hASF");
+            transform.SetParent(col.gameObject.transform);
+
+        }
+    }
+    void OnCollisionExit(Collision col)
+    {
+        if (col.gameObject.tag == "Platform")
+        {
+            Debug.Log("hASF");
+            transform.parent = null;
+
+        }
+    }
 }

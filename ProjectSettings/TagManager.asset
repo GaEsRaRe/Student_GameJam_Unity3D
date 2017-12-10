@@ -6,6 +6,7 @@ TagManager:
   tags:
   - selectable
   - observable
+  - Platform
   layers:
   - Default
   - TransparentFX

@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 27790205}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ Transform:
   m_LocalScale: {x: 0.029433668, y: 0.013110834, z: 0.057171673}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &73639272
 MeshRenderer:
@@ -363,6 +363,126 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -0.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1872925296494536, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250634211098798, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450334326565896, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454621140808370, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465495728329320, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902993941401856, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4875048366122280, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129964739361526, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993800689149958, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129569026904070, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945724294878264, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486209456486544, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883565539932608, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900156592494454, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392047071144340, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917471825312354, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282815316448542, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470518563692436, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004413706293046, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927334458839914, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771080902949360, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1261496333992664, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130401580244594, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1722755534885648, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091562394373000, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619581961224296, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268339191783068, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522369900059496, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490635479295030, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502233606187954, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc4c23edd0d4fc34fafc183cdfbbc24c, type: 2}
   m_IsPrefabParent: 0
@@ -471,7 +591,7 @@ Transform:
   m_LocalScale: {x: 0.029433668, y: 0.013110834, z: 0.057171673}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 24
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &234833268
 MeshRenderer:
@@ -667,7 +787,7 @@ GameObject:
   - component: {fileID: 542732776}
   m_Layer: 0
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -774,7 +894,7 @@ Transform:
   m_LocalScale: {x: 0.029433668, y: 0.013110834, z: 0.057171673}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &589955884
 MeshRenderer:
@@ -863,7 +983,7 @@ GameObject:
   - component: {fileID: 598456066}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -952,7 +1072,7 @@ GameObject:
   - component: {fileID: 605875471}
   m_Layer: 0
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1140,7 +1260,7 @@ Transform:
   m_LocalScale: {x: 0.029433709, y: 0.013110834, z: 0.057171736}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &723058546
 MeshRenderer:
@@ -1351,7 +1471,7 @@ GameObject:
   - component: {fileID: 819838979}
   m_Layer: 0
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1440,7 +1560,7 @@ GameObject:
   - component: {fileID: 846434070}
   m_Layer: 0
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1709,7 +1829,7 @@ GameObject:
   - component: {fileID: 921564140}
   m_Layer: 0
   m_Name: Point light (3)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1797,7 +1917,7 @@ Transform:
   m_LocalScale: {x: 0.029433668, y: 0.013110834, z: 0.057171673}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 270.0198, y: 0, z: 0}
 --- !u!23 &927811823
 MeshRenderer:
@@ -1971,7 +2091,7 @@ GameObject:
   - component: {fileID: 1193465180}
   m_Layer: 0
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2078,7 +2198,7 @@ Transform:
   m_LocalScale: {x: 0.029433668, y: 0.013110834, z: 0.057171673}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1288528999
 MeshRenderer:
@@ -2165,7 +2285,7 @@ GameObject:
   - component: {fileID: 1356964394}
   m_Layer: 0
   m_Name: Point light (5)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2235,7 +2355,7 @@ GameObject:
   - component: {fileID: 1409882126}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2252,7 +2372,7 @@ Transform:
   m_LocalScale: {x: 0.09883001, y: 0.013110834, z: 0.14185534}
   m_Children: []
   m_Father: {fileID: 956714629}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1409882126
 MeshRenderer:
@@ -2324,7 +2444,7 @@ GameObject:
   - component: {fileID: 1533039039}
   m_Layer: 0
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2411,7 +2531,7 @@ GameObject:
   - component: {fileID: 1609591778}
   m_Layer: 0
   m_Name: Point light (6)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2529,7 +2649,7 @@ GameObject:
   - component: {fileID: 1930670895}
   m_Layer: 0
   m_Name: Point light (4)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2599,7 +2719,7 @@ GameObject:
   - component: {fileID: 1975877356}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2688,7 +2808,7 @@ GameObject:
   - component: {fileID: 2040644908}
   m_Layer: 0
   m_Name: Cube (30)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2777,7 +2897,7 @@ GameObject:
   - component: {fileID: 2048912457}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2866,7 +2986,7 @@ GameObject:
   - component: {fileID: 2101850035}
   m_Layer: 0
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

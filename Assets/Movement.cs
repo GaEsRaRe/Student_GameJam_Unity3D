@@ -14,9 +14,11 @@ public class Movement : MonoBehaviour {
     float basic_speed = 0.03f;
     float double_speed = 0.05f;
     public float limit_up;
+    public bool can_run = true;
     public float limit_down;
     public float speed = 0.05f;
     public bool temp = false;
+    public bool can_jump = false;
     Vector3 checkpoint;
     float h = 0.0f;
     float v = 0.0f;
@@ -70,7 +72,7 @@ public class Movement : MonoBehaviour {
 
     void movement()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && can_run)
         {
             speed = double_speed;
         }else
@@ -91,7 +93,7 @@ public class Movement : MonoBehaviour {
 		if (Input.GetKey (KeyCode.S)) {
 			transform.Translate (new Vector3 (0, 0, -speed));
 		}
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && can_jump)
         {
             rigi.AddForce(new Vector3(0,300,0));
         }
@@ -192,6 +194,7 @@ public class Movement : MonoBehaviour {
         {
             Debug.Log("hASF");
             transform.SetParent(col.gameObject.transform);
+            can_jump = true;
 
         }
     }
@@ -200,8 +203,10 @@ public class Movement : MonoBehaviour {
         if (col.gameObject.tag == "Platform")
         {
             Debug.Log("hASF");
-            transform.parent = null; 
+            transform.parent = null;
+            can_jump = false;
 
         }
     }
+
 }

@@ -6,11 +6,261 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: VWBBkBum
+    100004: VWBBkGla
+    100006: VWBBkHod
+    100008: VWBFrBum
+    100010: VWBFrGla
+    100012: VWBFrHoD
+    100014: VWBFrHod
+    100016: VWBLaDeD
+    100018: VWBLatDe
+    100020: VWBLfBTa
+    100022: VWBLfDor
+    100024: VWBLfDPo
+    100026: VWBLfGlF
+    100028: VWBLfGlk
+    100030: VWBLfHeR
+    100032: VWBLfMaF
+    100034: VWBLfPos
+    100036: VWBMain
+    100038: VWBMarBk
+    100040: VWBMarBL
+    100042: VWBMarFr
+    100044: VWBRaDeD
+    100046: VWBRiBTa
+    100048: VWBRiDor
+    100050: VWBRiDPo
+    100052: VWBRiFrT
+    100054: VWBRiFrT001
+    100056: VWBRiFrT002
+    100058: VWBRiFrT003
+    100060: VWBRiGlF
+    100062: VWBRiGlG
+    100064: VWBRiGlG 1
+    100066: VWBRiGlk
+    100068: VWBRiHeL
+    100070: VWBRiMaF
+    100072: VWBRiPos
     400000: //RootNode
+    400002: VWBBkBum
+    400004: VWBBkGla
+    400006: VWBBkHod
+    400008: VWBFrBum
+    400010: VWBFrGla
+    400012: VWBFrHoD
+    400014: VWBFrHod
+    400016: VWBLaDeD
+    400018: VWBLatDe
+    400020: VWBLfBTa
+    400022: VWBLfDor
+    400024: VWBLfDPo
+    400026: VWBLfGlF
+    400028: VWBLfGlk
+    400030: VWBLfHeR
+    400032: VWBLfMaF
+    400034: VWBLfPos
+    400036: VWBMain
+    400038: VWBMarBk
+    400040: VWBMarBL
+    400042: VWBMarFr
+    400044: VWBRaDeD
+    400046: VWBRiBTa
+    400048: VWBRiDor
+    400050: VWBRiDPo
+    400052: VWBRiFrT
+    400054: VWBRiFrT001
+    400056: VWBRiFrT002
+    400058: VWBRiFrT003
+    400060: VWBRiGlF
+    400062: VWBRiGlG
+    400064: VWBRiGlG 1
+    400066: VWBRiGlk
+    400068: VWBRiHeL
+    400070: VWBRiMaF
+    400072: VWBRiPos
     2300000: //RootNode
+    2300002: VWBBkBum
+    2300004: VWBBkGla
+    2300006: VWBBkHod
+    2300008: VWBFrBum
+    2300010: VWBFrGla
+    2300012: VWBFrHoD
+    2300014: VWBFrHod
+    2300016: VWBLaDeD
+    2300018: VWBLatDe
+    2300020: VWBLfBTa
+    2300022: VWBLfDor
+    2300024: VWBLfDPo
+    2300026: VWBLfGlF
+    2300028: VWBLfGlk
+    2300030: VWBLfHeR
+    2300032: VWBLfMaF
+    2300034: VWBLfPos
+    2300036: VWBMain
+    2300038: VWBMarBk
+    2300040: VWBMarBL
+    2300042: VWBMarFr
+    2300044: VWBRaDeD
+    2300046: VWBRiBTa
+    2300048: VWBRiDor
+    2300050: VWBRiDPo
+    2300052: VWBRiFrT
+    2300054: VWBRiFrT001
+    2300056: VWBRiFrT002
+    2300058: VWBRiFrT003
+    2300060: VWBRiGlF
+    2300062: VWBRiGlG
+    2300064: VWBRiGlG 1
+    2300066: VWBRiGlk
+    2300068: VWBRiHeL
+    2300070: VWBRiMaF
+    2300072: VWBRiPos
     3300000: //RootNode
+    3300002: VWBBkBum
+    3300004: VWBBkGla
+    3300006: VWBBkHod
+    3300008: VWBFrBum
+    3300010: VWBFrGla
+    3300012: VWBFrHoD
+    3300014: VWBFrHod
+    3300016: VWBLaDeD
+    3300018: VWBLatDe
+    3300020: VWBLfBTa
+    3300022: VWBLfDor
+    3300024: VWBLfDPo
+    3300026: VWBLfGlF
+    3300028: VWBLfGlk
+    3300030: VWBLfHeR
+    3300032: VWBLfMaF
+    3300034: VWBLfPos
+    3300036: VWBMain
+    3300038: VWBMarBk
+    3300040: VWBMarBL
+    3300042: VWBMarFr
+    3300044: VWBRaDeD
+    3300046: VWBRiBTa
+    3300048: VWBRiDor
+    3300050: VWBRiDPo
+    3300052: VWBRiFrT
+    3300054: VWBRiFrT001
+    3300056: VWBRiFrT002
+    3300058: VWBRiFrT003
+    3300060: VWBRiGlF
+    3300062: VWBRiGlG
+    3300064: VWBRiGlG 1
+    3300066: VWBRiGlk
+    3300068: VWBRiHeL
+    3300070: VWBRiMaF
+    3300072: VWBRiPos
     4300000: "\u041F\u043B\u043E\u0441\u043A\u043E\u0441\u0442\u044C.003"
+    4300002: VWBMain
+    4300004: VWBLfDor
+    4300006: VWBLfGlF
+    4300008: VWBRiGlG
+    4300010: VWBLfMaF
+    4300012: VWBLaDeD
+    4300014: VWBRiDor
+    4300016: VWBRiMaF
+    4300018: VWBRiGlG
+    4300020: VWBRiGlF
+    4300022: VWBRaDeD
+    4300024: VWBRiHeL
+    4300026: VWBFrBum
+    4300028: VWBLfHeR
+    4300030: VWBLatDe
+    4300032: VWBFrHod
+    4300034: VWBFrHoD
+    4300036: VWBRiPos
+    4300038: VWBRiDPo
+    4300040: VWBLfPos
+    4300042: VWBLfDPo
+    4300044: VWBRiGlk
+    4300046: VWBBkHod
+    4300048: VWBLfGlk
+    4300050: VWBBkGla
+    4300052: VWBMarBk
+    4300054: VWBMarBL
+    4300056: VWBLfBTa
+    4300058: VWBRiBTa
+    4300060: VWBBkBum
+    4300062: VWBFrGla
+    4300064: VWBMarFr
+    4300066: VWBRiFrT003
+    4300068: VWBRiFrT002
+    4300070: VWBRiFrT001
+    4300072: VWBRiFrT
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 9a8c832725a04c144b2d3a738adecaed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crome
+    second: {fileID: 2100000, guid: 8f69d20af56b74c4a90dd4e846ab6f54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey
+    second: {fileID: 2100000, guid: 1a4392ac3859f8d4292e3c50d7c71963, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_DUNBEE_BODY
+    second: {fileID: 2100000, guid: 82de6da2ad8d96e4ca8b5f0eca6cd2aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_DUNBEE_Parachoque
+    second: {fileID: 2100000, guid: 3e0d18bfcaf5b464cace327bccb62e4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_DUNBEE_VENTANAS
+    second: {fileID: 2100000, guid: e73c6f8dbbfce3c459c8fe55e4e36e82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange
+    second: {fileID: 2100000, guid: befda02457ce9094186751af03231a73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Picture
+    second: {fileID: 2100000, guid: 50222332db1b011449de215e77b8c249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red 1
+    second: {fileID: 2100000, guid: b4a94b65d9a89ba45af2fdf073c57227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red 2
+    second: {fileID: 2100000, guid: 57a7c6d6941039749b6586e442af25a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 9a8c832725a04c144b2d3a738adecaed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crome
+    second: {fileID: 2100000, guid: 8f69d20af56b74c4a90dd4e846ab6f54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tube
+    second: {fileID: 2100000, guid: 73fe8102f503f8b49af0166e6606ab99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: bf89cf5e5e2fcb64fb0d90de3b0fe3b7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

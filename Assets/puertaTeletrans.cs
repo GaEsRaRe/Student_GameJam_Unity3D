@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Prime31.TransitionKit;
 
-public class abrirPuerta : MonoBehaviour {
+public class puertaTeletrans : MonoBehaviour {
 	int tiempo = 100;
 	int tiempoTranscurrido = 0;
 	bool abrir = false;
@@ -25,7 +25,7 @@ public class abrirPuerta : MonoBehaviour {
 		llave = false;
 		aS = GetComponent<AudioSource>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -71,23 +71,17 @@ public class abrirPuerta : MonoBehaviour {
 		if (llave) {
 			if (Other.gameObject.CompareTag ("Player")) {
 				if (Input.GetKeyDown (KeyCode.E)) {
-					if (!cerrar && !abierta) {
-						abrir = true;
-						aS.PlayOneShot (sndAbrir, 80.0f);
-					}
-				} 
-			}
-		} else {
-			if (Input.GetKeyDown (KeyCode.E)) {
+					if (tipo == 0) {
+						if (!cerrar && !abierta) {
+							abrir = true;
+							aS.PlayOneShot (sndAbrir, 80.0f);
+						}
+					} else if (tipo == 1) {
 
-				if(tipo==0){
-					aS.PlayOneShot (sndCerrado, 80.0f);
-					Debug.Log ("dlg,fmgklfd");
-				}
-				else if (tipo == 1) {
-					cambiarNivel ();
-				} else {
-					Debug.Log ("Ya lo buggeaste carajo");
+						cambiarNivel ();
+					}else {
+						Debug.Log ("Ya lo buggeaste carajo");
+					}
 				}
 			}
 		}

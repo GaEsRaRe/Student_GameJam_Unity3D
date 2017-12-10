@@ -289,3 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b133e2c438b0bd64d82124b78d7b3356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  llave: 0
+  sndAbrir: {fileID: 8300000, guid: 4c9e8e5ccffce4d2c99cb37823f0e806, type: 3}
+  sndCerrar: {fileID: 8300000, guid: 8f86acbb4de08485883517962fbc6532, type: 3}
+  sndCerrado: {fileID: 8300000, guid: 2a3b256d581ef4323bce8fe6b096bc71, type: 3}
+  tipo: 0

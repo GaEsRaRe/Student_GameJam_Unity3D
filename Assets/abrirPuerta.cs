@@ -8,9 +8,14 @@ public class abrirPuerta : MonoBehaviour {
 	bool abrir = false;
 	bool cerrar = false;
 	bool abierta = false;
+	bool llave;
 
+	public void SetLlave(){
+		llave = true;
+	}
 	// Use this for initialization
 	void Start () {
+		llave = false;
 	}
 	
 	// Update is called once per frame
@@ -53,10 +58,12 @@ public class abrirPuerta : MonoBehaviour {
 	// Colision con personaje
 	void OnTriggerStay(Collider Other){
 
-		if(Other.gameObject.CompareTag("Player")){
-			if (!cerrar&&!abierta) {
-				if (Input.GetKeyDown (KeyCode.E)!=abierta) {
-					abrir = true;
+		if (llave) {
+			if (Other.gameObject.CompareTag ("Player")) {
+				if (!cerrar && !abierta) {
+					if (Input.GetKeyDown (KeyCode.E) != abierta) {
+						abrir = true;
+					}
 				}
 			}
 		}
